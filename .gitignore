@@ -65,5 +65,7 @@ node_modules/
 .env
 
 # Do not include API keys
-CanRider/config/serviceAccount.json
-CanRider/config/config.js
+/config/serviceAccount.json
+/config/config.js
+
+
