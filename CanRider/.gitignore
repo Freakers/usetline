@@ -65,5 +65,6 @@ node_modules/
 .env
 
 # Do not include API keys
-common/serviceAccount.json
-common/config.js
+config/serviceAccount.json
+config/config.js
+config/FirebaseNotes.json
