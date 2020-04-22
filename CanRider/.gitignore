@@ -65,5 +65,5 @@ node_modules/
 .env
 
 # Do not include API keys
-serviceAccount.json
-config.js
+config/serviceAccount.json
+config/config.js
