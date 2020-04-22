@@ -1,0 +1,53 @@
+{
+  "type": "service_account",
+  "project_id": "can-rider",
+  "private_key_id": "988c23ffa003b1852b9d8b6352b9169f7b968194",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC9oeVa2RYNuP5x\nLNDwL8EeYYVGWatXe83wDX4gGDsUdqkMsAFWIerlRDNYu+fph5Fe7UEA0746M1Kj\nxGh0Ola7LFrAUXj6o7bvosc7nN95OvXrCiX4QZ/+Qdx+C4GIyGJ5vPE0HpTdu8Bf\nhSeLetJ8wbElb94I+RmrKcC/fEh2OH3SleEQZm8mQah/zGVMFqi3B/Nzm/G2m7rS\nY2SDS7CJPh4zksB4WwI8jhEAP7KZAhxV1GdKcM/XTT5VKQurVqcuSJ3FYpmQFPlq\n5XozqDINX4SFZ6FyLzgFMnZnRVlQVuE++ey3zWGkKunrzSmYTQhiGGRVQWBVz3/F\na4EycJr/AgMBAAECggEAA1DWx31Ip149Ug2vbITKT5m//22lBndPp0L2M9BDUUNq\nsjvDfFoiznX+F5VxAarxPdkUTjplmQ0xFbqFHqXRbXu/7WnhamRBgtI89Ov0bB0b\nnKEYuyJW48WTcXssBe3spyYER9EWrOGajQzCY8nlqtdQcwu61uZCjHDDMQknwmfN\nRAeRjZCOuLGVKr+dMJtEzqRD21IUYoXlwovS/LHLsOwZ8ibm6wC2voLJx1NxYBKy\n2Zh3yYHfpkT/YtIJV4ZeXDVKMxqNeUHxs/x7HIKShKUOnXTIJit7uqrLFcgo3YW4\nvNfUFydQGVBlXSqYJW6VmfyeBynqpCetRdCzet7FaQKBgQDwm8ugoM3Xo7Z0Y0Vz\n6XzsZ6gyukBm3xSkukkftOEz7J5kgslLaa0doa687qFcQ6GYxtbynNTV+gHXMcat\nKzOY/n+Nv21YbRvJYpmkkPt6DgJ5jTk3pBEVSDCn34hNKYNPwSPNOCKjxjlj90kD\nJkJFbQzZt1UnHTr+g6CkGOvdzQKBgQDJw1Cm+dcb/SL3kiSw6F+aq9wehmCY7ily\n5itKsUJDaQkQoBxWYjVYERhdSsJTlQd0YE2ddh5NNHB1syTLQngXfDikG7Z8BbB1\nMoHcPDSRkbHzZd7pd0hpD3VfxlMlXM1vDSWUFkgXjE6pwISw4yCHKtIFPLoXfJnY\na+bIOcuv+wKBgQCS3GVj/ALodnLtg5Jm98NagMK3g9u/brao/VOY2M0E5o6fhvza\n3PvftEp146n2KQm/uM6Gc5etq9Xnxegg1te9sMmmeYuCh8aIG3jwa9YzX82+56Zf\nAfOza8bXEKefgZE24wq5PmRWVq29CLk2BOo6eh933GFLaJoTs8AfqV5+mQKBgDeT\nOTAFOZ9YBr2y37BrEYqFNEikMw9s6rXfeKVGVj5DPF/7+lJBEviDHPb1lLl5H2iK\n7lYlJwuVGjURd10Vnga6DNAHYiifWI+vrd2AJ+rA+wdUVCZy2Ns3itkqw9RSz7N7\nJ5K24Hy8BR71DJe8uEUDIn6Wz5uQkr/uWM9mPBjpAoGAaTwuPAxLTeCXIVdlMjQp\nJ/8FZkV2FyoJDd4v5cWyJ0CmqMG1kUTgAxK5jmtFMa3r5mdyN8LGH+uBTcovqX5H\n9c8L1Sf4geQ6xwuRxZ6EDkalk1KuGquVEVxK159+4a5pYwPLg8gNnmQArDyHOeFm\n08hlOks7asUeRBm4FLmcxDo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-dy923@can-rider.iam.gserviceaccount.com",
+  "client_id": "114002703037217526484",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-dy923%40can-rider.iam.gserviceaccount.com"
+}
+
+// Firebase Config
+const firebaseConfig = {
+  apiKey: "AIzaSyAvuGdp2MEVy8hET-vBMlBg_d3WDq1yTo4",
+  authDomain: "https://can-rider.web.app/",
+  databaseURL: "https://console.firebase.google.com/project/can-rider/database/firestore/data/",
+  projectId: "can-rider",
+  storageBucket: "gs://can-rider.appspot.com",
+  messagingSenderId: "640416298831"
+}
+// Exports
+module.exports = firebaseConfig;
+
+// Imports
+const firestoreService = require('firestore-export-import');
+const firebaseConfig = require('./config.js');
+const serviceAccount = require('./serviceAccount.json');
+
+var admin = require("firebase-admin");
+
+var serviceAccount = require("/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://can-rider.firebaseio.com"
+});
+// JSON To Firestore
+const jsonToFirestore = async () => {
+  try {
+    console.log('Initialzing Firebase');
+    await firestoreService.initializeApp(serviceAccount, firebaseConfig.databaseURL);
+    console.log('Firebase Initialized');
+    await firestoreService.restore('./users.json');
+    console.log('Upload Success');
+  }
+  catch (error) {
+    console.log(error);
+  }
+};
+
+jsonToFirestore();  
