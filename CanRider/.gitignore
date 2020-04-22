@@ -63,3 +63,7 @@ node_modules/
 
 # dotenv environment variables file
 .env
+
+# Do not include API keys
+common/serviceAccount.json
+common/config.js
