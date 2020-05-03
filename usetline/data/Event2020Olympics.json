@@ -1,0 +1,139 @@
+{
+  "lastUpdate": "0000-00-00T00:00:00",
+  "user" :  "ADMIN",
+  "id": "2020 Olympic Games",
+  "domain": "Olympics",
+  "eventType": "Fanatsy Tournament",
+  "entryFee": 1000,
+  "description": "2020 Olympic Games",
+  "startDateTime": "2020-07-01T12:00:00",
+  "settlementDateTime": "2020-07-01T12:00:00",
+  "endDateTime": "2020-09-07T12:00:00",
+  "users": {},
+  "propositions": {
+    "1": {
+      "eventId": 1,
+      "id": 1,
+      "description": "What country will the most metals",
+      "endBidDateTime": "2020-08-07T12:00:00",
+      "maxbid": 200,
+      "minbid": 1,
+      "outcomes": {
+        "USA": {
+          "total": 0,
+          "yield": 0
+        },
+        "CANADA": {
+          "total": 0,
+          "yield": 0
+        },
+        "RUSSIA": {
+          "total": 0,
+          "yield": 0
+        },
+        "GERMANY": {
+          "total": 0,
+          "yield": 0
+        },
+        "CHINA": {
+          "total": 0,
+          "yield": 0
+        },
+        "JAPAN": {
+          "total": 0,
+          "yield": 0
+        }
+      },
+      "settlementDateTime": "2020-09-06T12:00:00",
+      "startBidDateTime": "2020-08-01T12:00:00",
+      "totalBid": 0,
+      "result": ""
+    },
+    "2": {
+      "eventId": 1,
+      "id": 2,
+      "maxbid": 300,
+      "minbid": 1,
+      "startBidDateTime": "2020-08-01T12:00:00",
+      "endBidDateTime": "2020-08-07T12:00:00",
+      "settlementDateTime": "2020-09-06T12:00:00",
+      "description": "What country will the least metals",
+      "outcomes": {
+        "USA": {
+          "total": 0,
+          "yield": 0
+        },
+        "CANADA": {
+          "total": 0,
+          "yield": 0
+        },
+        "RUSSIA": {
+          "total": 0,
+          "yield": 0
+        },
+        "GERMANY": {
+          "total": 0,
+          "yield": 0
+        },
+        "CHINA": {
+          "total": 0,
+          "yield": 0
+        },
+        "JAPAN": {
+          "total": 0,
+          "yield": 0
+        }
+      },
+      "totalBid": 0,
+      "result": ""
+    },
+    "3": {
+      "eventId": 1,
+      "id": 3,
+      "maxbid": 500,
+      "minbid": 1,
+      "totalBids": 500,
+      "startBidDateTime": "2020-08-01T12:00:00",
+      "endBidDateTime": "2020-08-26T12:00:00",
+      "settlementDateTime": "2020-08-26T14:00:00",
+      "description": "Who will win the 100 Meter Sprint ?",
+      "outcomes": {
+        "Steve Mullings": {
+          "total": 0,
+          "yield": 0
+        },
+        "Justin Gatlin": {
+          "total": 0,
+          "yield": 0
+        },
+        "Maurice Greene": {
+          "total": 0,
+          "yield": 0
+        },
+        "Nesta Carter": {
+          "total": 0,
+          "yield": 0
+        },
+        "Asafa Powell": {
+          "total": 0,
+          "yield": 0
+        },
+        "Yohan Blake": {
+          "total": 0,
+          "yield": 0
+        },
+        "Tyson Gay": {
+          "total": 0,
+          "yield": 0
+        },
+        "Usain Bolt": {
+          "total": 0,
+          "yield": 0
+        }
+      },
+      "totalBid": 0,
+      "result": ""
+    },
+    "totalBids":  0
+  }
+}

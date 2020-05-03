@@ -1,9 +1,27 @@
 {
-  "1": {
+  "0": {
+    "userUpdate": "ADMIN",
     "lastUpdate": "0000-00-00T00:00:00",
-    "userId": "Gus",
+    "userName": "Gus",
     "type": "User",
-    "accountId": " ",
+    "firstName": "Constantine",
+    "lastName": "Ivals",
+    "birthDate": "1900-01-01",
+    "address": "380 Hillsdale Avenue East",
+    "city": "Toronto",
+    "stateOrProv": "Province",
+    "state": "",
+    "province": "Ontario",
+    "country": "CAD",
+    "postalId": "M4S 1T8", 
+    "email": "caivalis@yahoo.ca",
+    "status": "New"
+  },
+  "1": {
+    "userUpdate": "ADMIN",
+    "lastUpdate": "0000-00-00T00:00:00",
+    "userName": "Wilson",
+    "type": "User",
     "firstName": "XXXXX",
     "lastName": "XXXXX",
     "birthDate": "1900-01-01",
@@ -13,13 +31,15 @@
     "state": "",
     "province": "Ontario",
     "country": "CAD",
+    "postalId": "A0A 1A1",
+    "email": "w@h.com",
     "status": "New"
   },
   "2": {
+    "userUpdate": "ADMIN",
     "lastUpdate": "0000-00-00T00:00:00",
-    "userId": "Wilson",
+    "userName": "Demo",
     "type": "User",
-    "accountId": " ",
     "firstName": "XXXXX",
     "lastName": "XXXXX",
     "birthDate": "1900-01-01",
@@ -29,22 +49,8 @@
     "state": "",
     "province": "Ontario",
     "country": "CAD",
-    "status": "New"
-  },
-  "3": {
-    "lastUpdate": "0000-00-00T00:00:00",
-    "userId": "Demo",
-    "type": "User",
-    "accountId": " ",
-    "firstName": "XXXXX",
-    "lastName": "XXXXX",
-    "birthDate": "1900-01-01",
-    "address": "XXXXX",
-    "city": "Toronto",
-    "stateOrProv": "Province",
-    "state": "",
-    "province": "Ontario",
-    "country": "CAD",
+    "postalId": "A0A 1A1",
+    "email": "t@o.com",
     "status": "New"
   }
 }

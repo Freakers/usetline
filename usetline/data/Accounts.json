@@ -1,0 +1,32 @@
+{
+  "0": {
+    "userUpdate": "ADMIN",
+    "lastUpdate": "0000-00-00T00:00:00",
+    "userId": "Gus",
+    "totalpoints": 100000,
+    "status": "New",
+    "myTournamentEvents": {},
+    "myPromotionEvents": {},
+    "myCashEvents": {}
+  },
+  "1": {
+    "userUpdate": "ADMIN",
+    "lastUpdate": "0000-00-00T00:00:00",
+    "userId": "Tony",
+    "totalpoints": 100000,
+    "status": "New",
+    "myTournamentEvents": {},
+    "myPromotionEvents": {},
+    "myCashEvents": {}
+  },
+  "2": {
+    "userUpdate": "ADMIN",
+    "lastUpdate": "0000-00-00T00:00:00",
+    "userId": "Wilson",
+    "totalpoints": 100000,
+    "status": "New",
+    "myTournamentEvents": {},
+    "myPromotionEvents": {},
+    "myCashEvents": {}
+  }
+}
