@@ -8,7 +8,7 @@ admin.initializeApp(functions.config().firebase);
 // in the event for the proposition and outcome associated to the bid
 exports.addBid = functions.firestore
     .document('Bids/{bidId}')
-    .onCreate((doc, context) => {
+    .onCreate( async (doc, context) => {
         const newBid = doc.data();
         const created = doc.data().created;
         const eventId = doc.data().eventId;
@@ -16,7 +16,10 @@ exports.addBid = functions.firestore
         const bidsize = doc.data().bidsize;
         const outcome = doc.data().outcome;
         const userid = doc.data().userName;
-        let x = processBid(created, userid, eventId, propositionId, bidsize, outcome);
+        const bidId = context.params.bidId;
+        console.log('bid', newBid);
+        console.log('bidId', bidId);
+        let x = await processBid(created, userid, eventId, propositionId, bidsize, outcome);
         return 0;
     });
 // This is the main program that calls the functions responsible for attaching the 
@@ -88,8 +91,8 @@ async function addUserBid(collectionName, documentId, created, eventId, propId, 
     let db = admin.firestore();
 
     try {
-        let userRef = db.collection(collectionName + '/' + documentId + '/Bids').doc();
-        return userRef.set({
+        let userRef = db.collection(collectionName + '/' + documentId + '/Bids');
+        return await userRef.doc().add({
             "id": userRef.id,
             "created": created,
             "eventId": eventId,
