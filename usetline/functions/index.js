@@ -6,6 +6,10 @@ admin.initializeApp(functions.config().firebase);
 // Database trigger when bid is added to the Bids collection
 // Trigger the processBid() which binds the bid to the user and updates bid total and yield 
 // in the event for the proposition and outcome associated to the bid
+
+let testFeature = require('./testFeature');
+exports.mytestfeaturefunction = testFunction.testFunction;
+
 exports.addBid = functions.firestore
     .document('Bids/{bidId}')
     .onCreate( async (doc, context) => {
@@ -26,7 +30,7 @@ exports.addBid = functions.firestore
 // bid to the user's bid collection and updating all pool totals within the event 
 // for each proposition and outcome
 async function processBid(created, user, event, prop, bid, outcome) {
-    let users = addBidToUser('Users', created, user, event, prop, bid, outcome);
+    let users = await addBidToUser('Users', created, user, event, prop, bid, outcome);
     let evnt = await getEvent(event);
     let updateEvent = await updateEventPoolDocument('Events', evnt.id, evnt, prop, bid, outcome )
     return 0;
